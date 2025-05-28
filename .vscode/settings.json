@@ -1,0 +1,5 @@
+{
+    "editor.suggestOnTriggerCharacters": false,
+    "javascript.suggest.enabled": false,
+    "typescript.suggest.enabled": false
+}
