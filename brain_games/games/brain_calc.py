@@ -1,33 +1,22 @@
 import random
-import prompt
+import brain_games.engine
 
 
 def main():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print('What is the result of the expression?')
-    correct_answers = 0
+    rules = 'What is the result of the expression?'
     operations = ['+', '-', '*']
-    for round in range(0,3):
-        number_1 = random.randint(0, 100)
+    for i in range(0,3):
+        number_1 = random.randint(1, 100)
         random_operation = random.choice(operations)
-        if random_operation == '+':
-            number_2 = random.randint(0, 100)
-            right_answer = number_1 + number_2
-        if random_operation == '-':
-            number_2 = random.randint(0, number_1)
-            right_answer = number_1 - number_2
-        if random_operation == '*':
-            number_2 = random.randint(0, 10)
-            right_answer = number_1 * number_2
-        print(f'Question: {number_1} {random_operation} {number_2}')
-        answer = prompt.string('Your answer: ')
-
-        if answer == str(right_answer):
-            print('Correct!')
-            correct_answers += 1
-        else:
-            print(f'{answer} is wrong answer ;(. Correct answer was {right_answer}.\nLet\'s try again, {name}!')
-            break
-    if correct_answers == 3:
-        print(f'Congratulations, {name}!') 
+        match random_operation:
+            case '+':
+                number_2 = random.randint(1, 100)
+                correct_answer = number_1 + number_2
+            case '-':
+                number_2 = random.randint(1, number_1)
+                correct_answer = number_1 - number_2
+            case '*':
+                number_2 = random.randint(1, 10)
+                correct_answer = number_1 * number_2
+        equasion = f'Question: {number_1} {random_operation} {number_2}'
+    brain_games.engine.game_engine(rules, correct_answer, equasion)
