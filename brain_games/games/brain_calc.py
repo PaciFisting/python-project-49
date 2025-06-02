@@ -1,5 +1,5 @@
 import random
-import brain_games.engine
+from brain_games import engine
 
 
 def round_generator():
