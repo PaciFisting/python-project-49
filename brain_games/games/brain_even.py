@@ -1,12 +1,15 @@
 import random
-import brain_games.engine
+from brain_games import engine
+
+def round_generator():
+    question = random.randint(0, 100)
+    if question % 2 == 0:
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
+    return question, correct_answer
 
 
 def main():
-    rules = 'Answer "yes" if the number is even, otherwise answer "no".'
-    question = random.randint(0, 100)
-    if question % 2 == 0:
-        correct_answer  = 'yes'
-    else:
-        correct_answer = 'no'
-    brain_games.engine.game_engine(rules, correct_answer, question)
+    rule = 'Answer "yes" if the number is even, otherwise answer "no".'
+    engine.game_engine(rule, round_generator)
