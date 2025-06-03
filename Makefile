@@ -8,6 +8,8 @@ brain-gcd:
 	uv run brain-gcd
 brain-calc:
 	uv run brain-calc
+brain-progression:
+	uv run brain-progression
 build:
 	uv build
 package-install:
