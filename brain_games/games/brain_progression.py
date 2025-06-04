@@ -15,7 +15,7 @@ def round_generator():
     for index, element in enumerate(sequence):
         if element == correct_answer:
             sequence[index] = ".."
-    question = str(sequence)[1:-1]
+    question = ' '.join(map(str, sequence))
     return question, correct_answer
     
 
