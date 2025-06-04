@@ -18,5 +18,6 @@ def main():
     rule = 'Find the greatest common divisor of given numbers.'
     engine.game_engine(rule, round_generator)
 
+
 if __name__ == "__main__":    
     main()

@@ -20,5 +20,6 @@ def main():
     rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
     engine.game_engine(rule, round_generator)
 
+
 if __name__ == "__main__":    
     main()
