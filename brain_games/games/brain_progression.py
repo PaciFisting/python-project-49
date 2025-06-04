@@ -1,11 +1,12 @@
 import random
+
 from brain_games import engine
 
 
 def round_generator():
     start = random.randint(1, 10)
     length = random.randint(5, 15)
-    step = random.randint(1,10)
+    step = random.randint(1, 10)
     sequence = []
     for index in range(length):
         current_element = start + index * step

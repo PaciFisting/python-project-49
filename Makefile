@@ -10,6 +10,8 @@ brain-calc:
 	uv run brain-calc
 brain-progression:
 	uv run brain-progression
+brain-prime:
+	uv run brain-prime
 build:
 	uv build
 package-install:

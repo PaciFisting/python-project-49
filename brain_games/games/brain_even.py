@@ -1,5 +1,7 @@
 import random
+
 from brain_games import engine
+
 
 def round_generator():
     question = random.randint(0, 100)
