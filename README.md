@@ -11,10 +11,12 @@
 
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=PaciFisting_python-project-49&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=PaciFisting_python-project-49)
 
-# brain-even:  https://asciinema.org/a/sozJxoVeVfMjfAr9lAHaBCZgF
 
-# brain-calc:  https://asciinema.org/a/DrD7nb1G5ppgXVEypmRh0adMH
+This project contains four games with numbers:
+1. A game of checking if a number is even or odd:  https://asciinema.org/a/sozJxoVeVfMjfAr9lAHaBCZgF
 
-# brain-gcd:   https://asciinema.org/a/sX9Yp3PJvt6ZbdyG2YMd9KaxW
+2. A game of solving mathematical equations:  https://asciinema.org/a/DrD7nb1G5ppgXVEypmRh0adMH
 
-# brain-prime: https://asciinema.org/a/qbohPIxaWbb5gRKBWWLRtF6pn
+3. A game of finding missing number in arithmetic sequence:   https://asciinema.org/a/sX9Yp3PJvt6ZbdyG2YMd9KaxW
+
+4. A game of checking if number is prime: https://asciinema.org/a/qbohPIxaWbb5gRKBWWLRtF6pn
