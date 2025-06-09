@@ -3,7 +3,7 @@ import random
 from brain_games.scripts import engine
 
 
-def round_generator():
+def calculate():
     number_1 = random.randint(0, 100)
     operations = ['+', '-', '*']
     random_operation = random.choice(operations)
@@ -22,8 +22,8 @@ def round_generator():
 
 
 def main():
-    rules = 'What is the result of the expression?'
-    engine.game_engine(rules, round_generator)
+    RULE = 'What is the result of the expression?'
+    engine.game_engine(RULE, calculate)
 
 
 if __name__ == "__main__":    

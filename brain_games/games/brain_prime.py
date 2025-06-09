@@ -3,13 +3,16 @@ import random
 from brain_games.scripts import engine
 
 
-def round_generator():
-    question = random.randint(2, 100)
+def is_prime(number):
     dividers = 0
-    for number in range(2, question):
-        if question % number == 0:
+    for i in range(2, number):
+        if number % i == 0:
             dividers += 1
-    if dividers == 0:
+    return dividers == 0
+
+def is_it_prime():
+    question = random.randint(2, 100)
+    if is_prime(question) is True:
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
@@ -17,8 +20,8 @@ def round_generator():
 
 
 def main():
-    rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-    engine.game_engine(rule, round_generator)
+    RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    engine.game_engine(RULE, is_it_prime)
 
 
 if __name__ == "__main__":    
