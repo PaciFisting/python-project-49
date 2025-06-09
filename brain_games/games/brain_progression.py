@@ -11,10 +11,9 @@ def find_progression_number():
     for index in range(length):
         current_element = start + index * step
         sequence.append(current_element)
-    correct_answer = random.choice(sequence)
-    for index, element in enumerate(sequence):
-        if element == correct_answer:
-            sequence[index] = '..'
+    correct_index = random.randint(0, length - 1)
+    correct_answer = sequence[correct_index]
+    sequence[correct_index] = '..'
     question = ' '.join(map(str, sequence))
     return question, correct_answer
     

@@ -10,6 +10,7 @@ def is_prime(number):
             dividers += 1
     return dividers == 0
 
+
 def is_it_prime():
     question = random.randint(2, 100)
     if is_prime(question) is True:

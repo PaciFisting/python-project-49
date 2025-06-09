@@ -16,7 +16,6 @@ def is_it_even():
     return question, correct_answer
 
 
-
 def main():
     RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
     engine.game_engine(RULE, is_it_even)

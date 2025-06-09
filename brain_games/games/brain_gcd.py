@@ -11,6 +11,7 @@ def calculate_gcd(number_1, number_2):
             gcd = number_1
     return gcd
 
+
 def find_gcd():
     number_1 = random.randint(1, 100)
     number_2 = random.randint(1, 100)
