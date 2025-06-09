@@ -1,6 +1,6 @@
 import random
 
-from brain_games import engine
+from brain_games.scripts import engine
 
 
 def round_generator():
