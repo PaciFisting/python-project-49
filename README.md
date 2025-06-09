@@ -17,6 +17,6 @@ This project contains four games with numbers:
 
 2. A game of solving mathematical equations:  https://asciinema.org/a/DrD7nb1G5ppgXVEypmRh0adMH
 
-3. A game of finding missing number in arithmetic sequence:   https://asciinema.org/a/sX9Yp3PJvt6ZbdyG2YMd9KaxW
+3. A game of finding greatest common divisor:   https://asciinema.org/a/sX9Yp3PJvt6ZbdyG2YMd9KaxW
 
 4. A game of checking if number is prime: https://asciinema.org/a/qbohPIxaWbb5gRKBWWLRtF6pn
