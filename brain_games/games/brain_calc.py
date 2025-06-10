@@ -1,6 +1,16 @@
 import random
 
-from brain_games.scripts import engine
+from brain_games import engine
+
+
+def calculate_expression(number_1, operation, number_2):
+    match operation:
+        case '+':
+            return number_1 + number_2
+        case '-':
+            return number_1 - number_2
+        case '*':
+            return number_1 * number_2
 
 
 def calculate():
@@ -10,21 +20,10 @@ def calculate():
     match random_operation:
         case '+':
             number_2 = random.randint(0, 100)
-            correct_answer = number_1 + number_2
         case '-':
             number_2 = random.randint(0, number_1)
-            correct_answer = number_1 - number_2
         case '*':
             number_2 = random.randint(0, 10)
-            correct_answer = number_1 * number_2
+    correct_answer = calculate_expression(number_1, random_operation, number_2)
     question = f'{number_1} {random_operation} {number_2}'
     return question, correct_answer
-
-
-def main():
-    RULE = 'What is the result of the expression?'
-    engine.game_engine(RULE, calculate)
-
-
-if __name__ == "__main__":    
-    main()

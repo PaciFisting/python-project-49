@@ -1,6 +1,6 @@
 import random
 
-from brain_games.scripts import engine
+from brain_games import engine
 
 
 def is_prime(number):
@@ -18,12 +18,3 @@ def is_it_prime():
     else:
         correct_answer = 'no'
     return question, correct_answer
-
-
-def main():
-    RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-    engine.game_engine(RULE, is_it_prime)
-
-
-if __name__ == "__main__":    
-    main()

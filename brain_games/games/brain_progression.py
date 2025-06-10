@@ -1,12 +1,9 @@
 import random
 
-from brain_games.scripts import engine
+from brain_games import engine
 
 
-def find_progression_number():
-    start = random.randint(1, 10)
-    length = random.randint(5, 15)
-    step = random.randint(1, 10)
+def calculate_progression_number(start, length, step):
     sequence = []
     for index in range(length):
         current_element = start + index * step
@@ -14,14 +11,13 @@ def find_progression_number():
     correct_index = random.randint(0, length - 1)
     correct_answer = sequence[correct_index]
     sequence[correct_index] = '..'
+    return sequence, correct_answer
+
+
+def find_progression_number():
+    start = random.randint(1, 10)
+    length = random.randint(5, 15)
+    step = random.randint(1, 10)
+    sequence, correct_answer = calculate_progression_number(start, length, step)    
     question = ' '.join(map(str, sequence))
     return question, correct_answer
-    
-
-def main():
-    RULE = 'What number is missing in the progression?'
-    engine.game_engine(RULE, find_progression_number)
-
-
-if __name__ == "__main__":    
-    main()

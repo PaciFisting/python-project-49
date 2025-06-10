@@ -1,6 +1,6 @@
 import random
 
-from brain_games.scripts import engine
+from brain_games import engine
 
 
 def calculate_gcd(number_1, number_2):
@@ -18,12 +18,3 @@ def find_gcd():
     question = f'{number_1} {number_2}'
     correct_answer = calculate_gcd(number_1, number_2)
     return question, correct_answer
-
-
-def main():
-    RULE = 'Find the greatest common divisor of given numbers.'
-    engine.game_engine(RULE, find_gcd)
-
-
-if __name__ == "__main__":    
-    main()
