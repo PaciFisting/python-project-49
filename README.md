@@ -12,7 +12,7 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=PaciFisting_python-project-49&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=PaciFisting_python-project-49)
 
 
-This project contains five games with numbers:
+# This project contains five games with numbers:
 1. A game of checking if a number is even or odd:  https://asciinema.org/a/sozJxoVeVfMjfAr9lAHaBCZgF
 
 2. A game of solving mathematical equations:  https://asciinema.org/a/DrD7nb1G5ppgXVEypmRh0adMH
