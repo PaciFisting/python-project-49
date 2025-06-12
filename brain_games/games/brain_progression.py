@@ -4,6 +4,14 @@ RULE = 'What number is missing in the progression?'
 
 
 def create_progression(start, length, step):
+    """
+    Возвращает арифметическую последовательность
+    
+    Аргументы:
+    start: первый элемент последовательности
+    length: длина последовательности
+    step: шаг последовательности
+    """
     sequence = []
     for index in range(length):
         current_element = start + index * step
@@ -12,6 +20,10 @@ def create_progression(start, length, step):
 
 
 def generate_round():
+    """"
+    Возвращает вопрос для вывода на экран и правильный ответ, 
+    который должен назвать пользователь
+    """
     start = random.randint(1, 10)
     length = random.randint(5, 15)
     step = random.randint(1, 10)
